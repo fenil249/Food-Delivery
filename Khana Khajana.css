@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#logo{
+margin :10px 40px;
+}
+#logo img{
+    height: 50px;
+    margin: 5px 5px;
+    margin-right: 311px;
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none ;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* top: 0px; */
+    /* left: 0px; */
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+    height: 250px;
+    /* z-index: 2; */
+    /* margin: -5   0px; */
+}
+#home::before{
+    content: "";
+    background: url(foodbg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 678px   ;
+    width:100%;
+    z-index: -1;
+    opacity: 0.95;
+}
+
+#home p{
+color: white;
+text-align: center;
+font-family: 'Alef', sans-serif;
+}
+#home h1{
+     /* margin-top: -150px;  */
+    color: white;
+    text-align: center;
+    font-family: 'Alef', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}
+#h-1{
+    font-size: 2.8rem;
+    padding: 15px;
+    text-align: center;
+}
+#h-2{
+    font-size: 2.3rem;
+    padding: 15px;
+    text-align: center;
+}
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(0 0 0 / 59%);
+    color: white;
+    box-shadow: 7px 7px 10px black;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: auto;
+    /* margin-left: 300px; */
+    
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(32, 170, 85);
+    box-shadow: 7px 7px 10px rgb(19, 0, 0);
+}
+.service-container{
+    /* position: relative; */
+    margin-top: 220px;
+}
+#service{
+    margin: 34px;
+    /* display: flex; */
+}
+
+.centre{
+    text-align: center;
+}
+#service .box1 img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#service .box1{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#client-section::before{
+    content: "";
+    background: url(food2bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.35;
+}
+
+#client-section{
+    /* height: 350px; */
+    position: relative;
+}
+#client-section h1{
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px  rgb(0, 0, 0);
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+
+    padding: 61px;
+}
+#client img{
+    height: 150px;
+}
+#contactus::before{
+    content: "";
+    background: url(food3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#contactus{
+    height: 350px;
+    position: relative;
+}
+.contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactbox form{
+    width: 45%;
+}
+.contactbox input,.contactbox textarea{
+    width: 100%;
+    padding : 0.1rem;
+    border-radius: 5px;
+    font-size: 0.89rem;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+}
